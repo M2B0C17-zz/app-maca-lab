@@ -3,10 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>APP Maca Lab</title>
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <h1>APP MACA LAB</h1>
     <p>La mejor aplicación del mundo poh loGGGooo!</p>
+    <!-- Botón FB -->
+    <fb:login-button
+      scope="public_profile,email"
+      onlogin="checkLoginState();">
+    </fb:login-button>
+    <!-- Cambio de Botón -->
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=131061414146800";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+    <!-- Pluggin en Página -->
+    <div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
     <footer>© Auspiciado por A Aliaga (jijijijiji)</footer>
+    <script type="text/javascript" src="assets/main.js">
+    </script>
   </body>
 </html>
